@@ -148,6 +148,7 @@ h1 {
 	background-color: #E0CA96;
 	transition-duration: 0.75s;
 	box-shadow: 12px 12px 5px #505050;
+	opacity: 0.6;
 }
 
 .parking_occupied {
