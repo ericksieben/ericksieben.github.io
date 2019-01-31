@@ -146,11 +146,8 @@ h1 {
 
 .parking_vacant:hover, .parking_occupied:hover {
 	background-color: #E0CA96;
-	color: white;
 	transition-duration: 0.75s;
 	box-shadow: 12px 12px 5px #505050;
-	width: 80%;
-	opacity: 1;
 }
 
 .parking_occupied {
