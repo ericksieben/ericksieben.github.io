@@ -28,12 +28,13 @@ function ajaxFunction(){
 	}
 		
 	//direct received data to appropriate html elements
-	ajaxRequest.orreadystatechange = function() {
+	ajaxRequest.onreadystatechange = function() {
 
 		//readyState = 4 indicates completed request
 		if(ajaxRequest.readyState == 4) {
 			var ajaxDisplay = document.getElementById("parkingData");
-			ajaxDisplay.innerHTML = ajaxRequest.responseText + "jstest";
+			//ajaxDisplay.innerHTML = ajaxRequest.responseText;
+			ajaxDisplay.innerHTML = "request processed";
 		}
 	}
 
