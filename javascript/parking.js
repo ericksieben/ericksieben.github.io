@@ -34,11 +34,10 @@ function ajaxFunction(){
 		if(ajaxRequest.readyState == 4) {
 			var ajaxDisplay = document.getElementById("parkingData");
 			ajaxDisplay.innerHTML = ajaxRequest.responseText;
-			//ajaxDisplay.innerHTML = "request processed";
 		}
 	}
 
 	//call server script to query database
-	ajaxRequest.open("GET", "../php/parking-query.php", true);
+	ajaxRequest.open("GET", "../php/test.php", true);
 	ajaxRequest.send(null);
 }
