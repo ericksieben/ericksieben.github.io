@@ -1,6 +1,6 @@
 # House Website
 
-* under development, early stages *
+/under development, early stages/
 
 hosted on DigitalOcean Droplet
 
