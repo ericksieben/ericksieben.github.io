@@ -38,6 +38,6 @@ function ajaxFunction(){
 	}
 
 	//call server script to query database
-	ajaxRequest.open("GET", "../var/www/html/test.php", true);
+	ajaxRequest.open("GET", "test.php", true);
 	ajaxRequest.send(null);
 }
