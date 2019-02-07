@@ -9,7 +9,7 @@ mysql_connect($dbhost, $dbuser, $dbpass);
 mysql_select_db($dbname) or die(mysql_error());
 
 //select data from database 'parking' table 'parkingdata'
-$query = "select * from parkingdata"
+$query = "select * from parkingdata;"
 $query_result = mysql_query($query) or die(mysql_error());
 
 //build html string to return to client
