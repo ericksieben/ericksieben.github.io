@@ -33,7 +33,7 @@ function ajaxFunction(){
 		//readyState = 4 indicates completed request
 		if(ajaxRequest.readyState == 4) {
 			var ajaxDisplay = document.getElementById('parkingData');
-			ajaxDisplay.innerHTML = ajaxRequest.responseText;
+			ajaxDisplay.innerHTML = ajaxRequest.responseText + "jstest";
 		}
 	}
 
