@@ -6,7 +6,7 @@
 	<title>House Website</title>
 </head>
 
-<body>
+<body onload='ajaxFunction()'>
 	<div class="page">
 	<div class="banner">
 		<h1>The House Website</h1>
@@ -24,6 +24,7 @@
 		</div>
 		
 		<div class="content">
+			<!--
 			<div class="parking_garage">
 				<p class="title">Garage</p>
 				<div class="cars">
@@ -38,9 +39,11 @@
 					<div class="parking_occupied"></div>
 				</div>
 			<div>
+			-->
+			<p id="parkingData"></p>
 		</div>
 	</div>
 	</div>
 </body>
-
+<script type="text/javascript" src="./javascript/parking.js"></script>
 </html>
