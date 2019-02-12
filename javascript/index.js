@@ -59,6 +59,6 @@ function ajaxFunction(){
 	//send input to server and call server script to authenticate
 	var input = document.getElementById("password").elements[0].value;
 	var inputString = "?input = " + input;
-	ajaxRequest.open("GET", "/php/authenticate.php" + input, true);
+	ajaxRequest.open("GET", "php/authenticate.php" + input, true);
 	ajaxRequest.send(null);
 }
