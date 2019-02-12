@@ -42,12 +42,17 @@ function ajaxFunction(){
 			//send password input to server, php script will authenticate
 			//echo "1" for accepted, "0" otherwise
 			var response = ajaxRequest.responseText;
-			if(response == "1") {
-				location.href = "home/home.html";
-			} 
-			if(response == "0") {
-				location.href = "#";
-			}
+
+			//test input
+			var ajaxDisplay = document.getElementById("test");
+			ajaxDisplay.innerHTML = ajaxRequest.responseText;
+
+			//if(response == "1") {
+			//	location.href = "home/home.html";
+			//} 
+			//if(response == "0") {
+			//	location.href = "#";
+			//}
 		}
 	}
 
