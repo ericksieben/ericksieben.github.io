@@ -43,16 +43,12 @@ function ajaxFunction(){
 			//echo "1" for accepted, "0" otherwise
 			var response = ajaxRequest.responseText;
 
-			//test input
-			var ajaxDisplay = document.getElementById("test");
-			ajaxDisplay.innerHTML = ajaxRequest.responseText;
-
-			//if(response == "1") {
-			//	location.href = "home/home.html";
-			//} 
-			//if(response == "0") {
-			//	location.href = "#";
-			//}
+			if(response == "1") {
+				location.href = "home/home.html";
+			} 
+			if(response == "0") {
+				location.href = "#";
+			}
 		}
 	}
 
