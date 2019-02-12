@@ -38,17 +38,22 @@ function ajaxFunction(){
 
 		//readyState = 4 indicates completed request
 		if(ajaxRequest.readyState == 4) {
-			if(ajaxRequest.responseText == "1") {
+
+			//send password input to server, php script will authenticate
+			//echo "1" for accepted, "0" otherwise
+			var response = ajaxRequest.responseText;
+			if(response == "1") {
 				location.href = "home/home.html";
-			}
-			else {
+			} 
+			if(response == "0") {
 				location.href = "#";
 			}
 		}
 	}
 
-	//call server script to authenticate
+	//send input to server and call server script to authenticate
 	var input = document.getElementById("password").elements[0].value;
+	var inputString = "?input = " + input;
 	ajaxRequest.open("GET", "../php/authenticate.php" + input, true);
 	ajaxRequest.send(null);
 }
