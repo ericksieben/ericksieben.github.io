@@ -44,7 +44,7 @@ function ajaxFunction(){
 			var response = ajaxRequest.responseText;
 
 			if(response == "1") {
-				location.href = "home/home.html";
+				location.href = "home/home.php";
 			} 
 			if(response == "0") {
 				location.href = "#";
