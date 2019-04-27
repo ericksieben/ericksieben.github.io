@@ -1,7 +1,7 @@
 <?php
 	session_start();
         //redirect to mainpage if session variable "isAuthenticated" is not set
-        if(empty(!$_SESSION['isAuthenticated'])) {
+        if(empty($_SESSION['isAuthenticated'])) {
                 header('Location: http://erick-sieben.com');
         }
 ?>
