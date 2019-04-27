@@ -33,6 +33,7 @@
         height: 100%;
         width: 100%;
         box-sizing: border-box;
+        overflow-y: scroll;
 }
 
 .nav_link {
@@ -58,25 +59,7 @@
         display: inline-block;
         width: 99%;
         background-color: #E0CA96;
-        background: linear-gradient(to top, rgba(100,100,100,1), rgba(155,155,155,1));
-        padding: 5px;
-        box-shadow: 3px 3px 1px #505050;
-        color: black;
-        text-align: center;
-        transition-duration: 0.5s;
-        font-size: 20px;
-        margin: 0px 0px;
-        text-decoration: none;
-        float: left;
-        box-sizing: border-box;
-        opacity: 0.6;
-}
-
-.nav_link_active {
-        display: inline-block;
-        width: 99%;
-        background-color: #E0CA96;
-        background: linear-gradient(to top, rgba(100,100,100,1), rgba(155,155,155,1));
+	 background: linear-gradient(to top, rgba(100,100,100,1), rgba(155,155,155,1));
         padding: 5px;
         box-shadow: 3px 3px 1px #505050;
         color: black;
@@ -130,62 +113,105 @@ h1 {
         height: 100%;
 }
 
-.parking_garage {
-        height: 50%;
+
+.main {
         width: 100%;
-        background-color:#CCCCCC;
-        border: 2px solid #000000;
-        margin: 0px;
-        box-sizing: border-box;
-        display: flex;
-        flex-flow: column;
-}
-
-.parking_driveway {
-        height: 50%;
-        width: 100%;
-        background-color:#DFDFDF;
-        border: 2px solid #000000;
-        margin: 0px;
-        box-sizing: border-box;
-        display: flex;
-        flex-flow: column;
-}
-
-.parking_vacant {
-        border: 5px solid #888888;
-        border-radius: 15px;
-        margin: 20px;
-        width: 48%;
-        Opacity: 0.6;
-        box-shadow: 8px 8px 3px #505050;
-        transition-duration: 0.75s;
-}
-
-.parking_vacant:hover, .parking_occupied:hover {
+        height: 100vh;
+        background-image:url(../images/house1.png);
+        background-repeat: no-repeat;
+        background-position: center;
         background-color: #E0CA96;
-        transition-duration: 0.75s;
-        box-shadow: 12px 12px 5px #505050;
-        opacity: 0.6;
-}
-
-.parking_occupied {
-        border: 5px solid #888888;
-        background-color: #888888;
-        border-radius: 15px;
-        margin: 20px;
-        width: 48%;
-        box-shadow: 8px 8px 3px #505050;
-        opacity: 0.6;
-        transition-duration: 0.75s;
-}
-
-.title, {
-        flex: 0 1 auto;
-}
-
-.cars {
+        background-attachment: fixed;
+        background-size: cover;
+        opacity: 0.8;
         display: flex;
-        flex-flow: row;
-        height: 95%
+        justify-content: center;
+        align-items: center;
+}
+
+.holder {
+        text-align: center;
+}
+
+.grocery_list {
+        list-style: none;
+        padding-left: 0;
+}
+
+.grocery_item {
+        display: inline-block;
+        cursor: pointer;
+        width: 100%;
+        background-color: #E0CA96;
+        background: linear-gradient(to top, rgba(78,244,66,1), rgba(30,102,25,1));
+        padding: 15px;
+        box-shadow: 3px 3px 1px #505050;
+        color: black;
+        text-align: center;
+        transition-duration: 0.25s;
+        font-size: 20px;
+        margin: 0px 0px;
+        text-decoration: none;
+        float: left;
+        box-sizing: border-box;
+        opacity: 0.8;
+}
+
+.grocery_item:hover {
+        background-color: #363636;
+        background: linear-gradient(to top, rgba(40,40,40,1), rgba(90,90,90,1));
+        color: white;
+        transition-duration: 0.25s;
+}
+
+.add_button {
+        display: inline-block;
+        cursor: pointer;
+        width: 100%;
+        background-color: #E0CA96;
+        background: linear-gradient(to top, rgba(162,88,252,1), rgba(77,41,122,1));
+        padding: 15px;
+        box-shadow: 3px 3px 1px #505050;
+        color: black;
+        text-align: center;
+        transition-duration: 0.25s;
+        font-size: 20px;
+        margin: 0px 0px;
+        text-decoration: none;
+        float: left;
+        box-sizing: border-box;
+        opacity: 0.8;
+        display: flex;
+}
+
+.submit_add {
+        display: inline-block;
+        cursor: pointer;
+        background-color: #E0CA96;
+        background: linear-gradient(to top, rgba(78,244,66,1), rgba(30,102,25,1));
+        padding: 15px;
+        box-shadow: 3px 3px 1px #505050;
+        color: black;
+        text-align: center;
+        transition-duration: 0.25s;
+        font-size: 20px;
+        margin: 10px 20px;
+        text-decoration: none;
+        float: left;
+        box-sizing: border-box;
+        opacity: 0.8;
+        border-radius: 1000px;
+        width: 8%;
+        height: auto;
+}
+
+.submit_add:hover {
+        background-color: #363636;
+        background: linear-gradient(to top, rgba(80,80,80,1), rgba(120,120,120,1));
+        color: white;
+        transition-duration: 0.25s;
+}
+
+.input_holder {
+        width: 80%;
 }
