@@ -121,7 +121,6 @@ function updateParking(index){
                         //reload page
                         location.reload();
                 }
-                }
 
         }
         var fileString = "../php/parking-update.php?index=";
