@@ -10,7 +10,7 @@
 <html>
 
 <head>
-        <link rel="stylesheet" type="text/css" href="../style/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="../style/stylesheet_forum.css">
         <title>House Website</title>
 </head>
 
@@ -31,11 +31,12 @@
                         <div class="nav_fill"></div>
                 </div>
 
-                <div class="content">
-                        <p>content goes here</p>
+                <div class="content" id="postList">
+			
                 </div>
+		<div class="addnew"><h1>+</h1></div>
         </div>
         </div>
 </body>
-
+<script type="text/javascript" src="../javascript/forum.js"></script>
 </html>
