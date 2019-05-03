@@ -33,7 +33,8 @@ function getPosts(){
                         var ajaxDisplay = document.getElementById("postList");
 
                         //insert text returned from php script
-                        ajaxDisplay.innerHTML = ajaxRequest.responseText;
+                        //ajaxDisplay.innerHTML = ajaxRequest.responseText;
+			ajaxDisplay.innerHTML = "testing :D";
                 }
         }
 
