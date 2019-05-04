@@ -36,13 +36,14 @@ function getPosts(){
 			var result_array = ajaxRequest.responseText.split("&$%");
                         var display_string = '';
 			var i=0;
-			/*while(i<result_array.length) {
+			while(i<result_array.length) {
 				display_string += i;
 				display_string += '. ';
 				display_string += result_array[i];
 				display_string += ' ';
-			}*/
-                        postDisplay.innerHTML = result_array.length;
+				i++;
+			}
+                        postDisplay.innerHTML = display_string;
 			//ajaxDisplay.innerHTML = "testing :D";
                 }
         }
