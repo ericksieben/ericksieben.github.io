@@ -42,7 +42,7 @@ function getPosts(){
 				display_string += result_array[i];
 				display_string += ' ';
 			}
-                        ajaxDisplay.innerHTML = display_string;
+                        postDisplay.innerHTML = display_string;
 			//ajaxDisplay.innerHTML = "testing :D";
                 }
         }
