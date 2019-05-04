@@ -30,10 +30,19 @@ function getPosts(){
 
                 //readyState = 4 indicates completed request
                 if(ajaxRequest.readyState == 4) {
-                        var ajaxDisplay = document.getElementById("postList");
 
-                        //insert text returned from php script
-                        ajaxDisplay.innerHTML = ajaxRequest.responseText;
+			//process and display results from database
+                        var postDisplay = document.getElementById("postList");
+			var result_array = ajaxRequest.responseText.split("&$%");
+                        var display_string = '';
+			var i=0;
+			while(i<result_array.length) {
+				display_string += i;
+				display_string += '. ';
+				display_string += result_array[i];
+				display_string += ' ';
+			}
+                        ajaxDisplay.innerHTML = 
 			//ajaxDisplay.innerHTML = "testing :D";
                 }
         }
