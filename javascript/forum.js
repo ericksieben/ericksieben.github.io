@@ -33,19 +33,7 @@ function getPosts(){
 
 			//process and display results from database
                         var postDisplay = document.getElementById("postList");
-			var result_array = ajaxRequest.responseText.split("&$%");
-                        var display_string = '';
-			var i=0;
-			while(i<result_array.length - 1) {
-				display_string += '<div class="forumpost"><div class="postsubject"><h3>';
-				display_string += result_array[i+1];
-				display_string += '</h3></div><div class="postinfo"><p>';
-				display_string += result_array[i];
-				display_string += '</p><p>';
-				display_string += result_array[i+2];
-				display_string += '</p></div></div>';
-				i=i+3;				
-			}
+			var display_string = ajaxRequest.responseText;
                         postDisplay.innerHTML = display_string;
 			//ajaxDisplay.innerHTML = "testing :D";
                 }
