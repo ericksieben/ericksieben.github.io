@@ -242,3 +242,10 @@ th {
         color: white;
         transition-duration: 0.25s;
 }
+
+.interfacebackground {
+	background-color: #363636;
+	color: white;
+	opacity: 0.3;
+	z-index: 1;
+}

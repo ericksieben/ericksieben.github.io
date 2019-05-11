@@ -43,3 +43,11 @@ function getPosts(){
         ajaxRequest.open("GET", "../php/postlist.php", true);
         ajaxRequest.send(null);
 }
+
+//addPost
+//bring up post creation interface
+function addPost(){
+	var interfaceDisplay = document.getElementById("postList");
+	var display_string = '<div class="interfacebackground"></div>'
+	interfaceDisplay.innerHTML = display_string;
+}
