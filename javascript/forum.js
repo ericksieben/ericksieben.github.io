@@ -48,6 +48,6 @@ function getPosts(){
 //bring up post creation interface
 function addPost(){
 	var interfaceDisplay = document.getElementById("container");
-	var display_string = '<div class="interfacebackground"></div>';
+	var display_string = '<div class="interfacebackground"><form>Name<input type="text" name="poster" required><br><br>Subject<input type="text" name="subject" required><br><br><textarea id="textinput" rows="10" cols="50" placeholder="text"></textarea><br><br><input type="submit" value="post" required><br></form></div>';
 	interfaceDisplay.insertAdjacentHTML("beforeend", display_string);
 }
