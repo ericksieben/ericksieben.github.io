@@ -14,7 +14,7 @@
         <title>House Website</title>
 </head>
 
-<body onload="getPosts()">
+<body id="pagemain" onload="getPosts()">
         <div class="page">
         <div class="banner">
                 <h1>The House Website</h1>
