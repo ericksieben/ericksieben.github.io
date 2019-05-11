@@ -247,6 +247,7 @@ th {
 }
 
 .interfacebackground {
+	position: absolute;
 	background-color: #363636;
 	color: white;
 	opacity: 0.3;
