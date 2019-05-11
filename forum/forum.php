@@ -34,7 +34,7 @@
                 <div class="content" id="postList">
 			
                 </div>
-		<div class="addnew" onclick="addPost()"><h1>+</h1></div>
+		<div id="addnew" class="addnew" onclick="addPost()"><h1>+</h1></div>
         </div>
         </div>
 </body>
