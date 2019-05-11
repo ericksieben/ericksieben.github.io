@@ -47,7 +47,7 @@ function getPosts(){
 //addPost
 //bring up post creation interface
 function addPost(){
-	var interfaceDisplay = document.getElementById("pagemain");
-	var display_string = '<div class="interfacebackground"></div>'
+	var interfaceDisplay = document.getElementById("container");
+	var display_string = '<div class="interfacebackground"></div>';
 	interfaceDisplay.insertAdjacentHTML("beforeend", display_string);
 }

@@ -14,13 +14,13 @@
         <title>House Website</title>
 </head>
 
-<body id="pagemain" onload="getPosts()">
+<body onload="getPosts()">
         <div class="page">
         <div class="banner">
                 <h1>The House Website</h1>
         </div>
 
-        <div class="container">
+        <div id="container" class="container">
 
                 <div class="nav_bar">
                         <a href="../home/home.php" class="nav_link">Home</a>
