@@ -35,6 +35,7 @@
 			
                 </div>
 		<div id="addnew" class="addnew" onclick="addPost()"><h1>+</h1></div>
+		<p id="testdata"></p>
         </div>
         </div>
 </body>
