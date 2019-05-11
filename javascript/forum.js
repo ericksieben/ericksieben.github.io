@@ -48,7 +48,7 @@ function getPosts(){
 //bring up post creation interface
 function addPost(){
 	var interfaceDisplay = document.getElementById("container");
-	var display_string = '<div class="interfacebackground"><form action="#" onsubmit="sendNewPost(this);">Name <input type="text" name="poster" required><br><br>Subject <input type="text" name="subject" required><br><br><textarea id="textinput" rows="10" cols="50" placeholder="text"></textarea><br><br><input type="submit" value="post" required><br></form></div>';
+	var display_string = '<div class="interfacebackground"><form action="#" onsubmit="sendNewPost(this);">Name <input type="text" name="poster" id="poster" required><br><br>Subject <input type="text" name="subject" id="subject" required><br><br><textarea id="textinput" rows="10" cols="50" placeholder="text"></textarea><br><br><input type="submit" value="post" required><br></form></div>';
 	interfaceDisplay.insertAdjacentHTML("beforeend", display_string);
 	var button = document.getElementById("addnew");
 	button.parentNode.removeChild(button);
@@ -57,10 +57,10 @@ function addPost(){
 //sendNewPost
 //send new post to database
 //form input is given as input to the function
-function sendNewPost(form){
-	var poster = form.elements[0];
-	var subject = form.elements[1];
-	var text = form.elements[2];
+function sendNewPost(){
+	var poster = document.getElementById("poster").value;
+	var subject = document.getElementById("subject").value;
+	var text = document.getElementById("textinput").value;
 	var disp_string = "poster: " + poster + "subject: " + subject + "text: " + text;
 	alert(disp_string);
 }
