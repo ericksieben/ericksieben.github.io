@@ -251,4 +251,8 @@ th {
 	z-index: 1;
 	top: 224px;
 	left: 250px;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	
 }
