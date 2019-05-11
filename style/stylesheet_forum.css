@@ -250,10 +250,10 @@ th {
 	position: absolute;
 	background-color: #363636;
 	color: white;
-	opacity: 0.5;
+	opacity: 0.7;
 	z-index: 1;
 	overflow: hidden;
 	height: 100%;
 	width: 100%;
-	
+	padding-left: 250px; 
 }
