@@ -49,5 +49,5 @@ function getPosts(){
 function addPost(){
 	var interfaceDisplay = document.getElementById("postList");
 	var display_string = '<div class="interfacebackground"></div>'
-	interfaceDisplay.innerHTML = display_string;
+	interfaceDisplay.insertAdjacentHTML("beforeend", display_string);
 }
