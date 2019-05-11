@@ -61,5 +61,5 @@ function sendNewPost(form){
 	var poster = form.elements[0];
 	var subject = form.elements[1];
 	var text = form.elements[2];
-	document.getElementById("testdata").innerHTML = poster + subject + text;	
+	document.getElementById("testdata").innerHTML = "poster: " + poster + "subject: " + subject + "text: " + text;	
 }
