@@ -61,13 +61,10 @@ function sendNewPost(form){
 
 	//collect input data from form fields
 	var poster = form.elements[0].value;
-	var subject = document.getElementById("subject").value;
-	var text = document.getElementById("textinput").value;
-	var disp_string = "poster: " + poster + "subject: " + subject + "text: " + text;
-	alert(disp_string);
+	var subject = form.elements[1].value;
+	var text = form.elements[2].value;
 
-/*
-
+	//create ajax request and call server script
 	var addRequest;
 
         try {
@@ -97,15 +94,12 @@ function sendNewPost(form){
                 //readyState = 4 indicates completed request
                 if(addRequest.readyState == 4) {
                         var confirm = addRequest.responseText;
-                        location.reload();
+			alert(confirm);
                 }
         }
 
         //call server script to query database
-        var item = document.getElementById("add_item").elements[0].value;
-        var fileString = "../php/grocerylist-update.php?data=" + item + "&op=add";
+        var fileString = "../php/forum-addpost.php?poster=" + poster + "&subject=" + subject + "&text=" + text;
         addRequest.open("GET", fileString, true);
         addRequest.send(null);
-
-*/
 }
