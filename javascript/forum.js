@@ -94,6 +94,7 @@ function sendNewPost(form){
                 //readyState = 4 indicates completed request
                 if(addRequest.readyState == 4) {
                         var confirm = addRequest.responseText;
+			alert(confirm);
                 }
         }
 
