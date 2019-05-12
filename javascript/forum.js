@@ -57,10 +57,55 @@ function addPost(){
 //sendNewPost
 //send new post to database
 //form input is given as input to the function
-function sendNewPost(){
-	var poster = document.getElementById("poster").value;
+function sendNewPost(form){
+
+	//collect input data from form fields
+	var poster = form.elements[0].value;
 	var subject = document.getElementById("subject").value;
 	var text = document.getElementById("textinput").value;
 	var disp_string = "poster: " + poster + "subject: " + subject + "text: " + text;
 	alert(disp_string);
+
+/*
+
+	var addRequest;
+
+        try {
+                //Opera, Firefox Safari
+                addRequest = new XMLHttpRequest();
+        } catch (e) {
+
+                //Internet Explorer
+                try {
+                        addRequest = new ActiveXObject("Msxml2.XMLHTTP");
+                } catch (e) {
+
+                        try {
+                                addRequest = new ActiveXObject("Microsoft.XMLHTTP");
+                        } catch (e) {
+
+                                //Something went wrong
+                                alert("Unable to support browser");
+                                return false;
+                        }
+                }
+        }
+
+        //direct received data to appropreate html elements
+        addRequest.onreadystatechange = function() {
+
+                //readyState = 4 indicates completed request
+                if(addRequest.readyState == 4) {
+                        var confirm = addRequest.responseText;
+                        location.reload();
+                }
+        }
+
+        //call server script to query database
+        var item = document.getElementById("add_item").elements[0].value;
+        var fileString = "../php/grocerylist-update.php?data=" + item + "&op=add";
+        addRequest.open("GET", fileString, true);
+        addRequest.send(null);
+
+*/
 }
