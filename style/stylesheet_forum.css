@@ -218,8 +218,6 @@ th {
 .forumposttext {
 	border: 4px solid #4A4A4A;
 	position: absolute;
-	top:0px;
-	left:0px;
 	background-color: #363636;
         background: linear-gradient(to top, rgba(40,40,40,1), rgba(90,90,90,1));
         color: white;
