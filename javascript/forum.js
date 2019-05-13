@@ -104,10 +104,10 @@ function sendNewPost(form){
 }
 
 //functionality to show forum post text when hovered (desktop) or clicked (mobile)
-/*$(document).ready(function(){
+$(document).ready(function(){
 
 	//define function to remove forum post description
-	function showText(){
+/*	function showText(){
 		$(".forumpost").css("opacity", "0");
 		$(".forumposttext").css("opacity", "0.8");
 	}
@@ -116,5 +116,5 @@ function sendNewPost(form){
 	function hideText(){
 		$(".forumpost").css("opacity", "0.8");
 		$(".forumposttext").css("opacity", "0");
-	}
-}*/
+	}*/
+}
