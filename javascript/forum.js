@@ -117,4 +117,12 @@ $(document).ready(function(){
 		$(".forumpost").css("opacity", "0.8");
 		$(".forumposttext").css("opacity", "0");
 	}
+
+	$(".forumpost").hover(
+		function(){
+			showText();
+		}, function() {
+			hideText();
+		}	
+	)
 })
