@@ -277,6 +277,13 @@ th {
 	background: linear-gradient(to top, rgba(102, 130, 175,1), rgba(133, 172, 234 ,1));
 }
 
+.buttonviewthread:hover {
+	background-color: #363636;
+        background: linear-gradient(to top, rgba(80,80,80,1), rgba(120,120,120,1));
+        color: white;
+        transition-duration: 0.25s;
+}
+
 .forumposttext:hover {
 	opacity: 0.8;
 }
