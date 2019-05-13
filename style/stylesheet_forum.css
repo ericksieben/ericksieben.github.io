@@ -260,3 +260,15 @@ th {
 	padding-top: 20px;
 	text-align: center;
 }
+
+.forumposttext:hover {
+	opacity: 0.8;
+}
+
+.forumpost:hover {
+	opactiy: 0;
+}
+
+@media only screen and (max-device-width: 480px) {
+	.forumpostext: 
+}

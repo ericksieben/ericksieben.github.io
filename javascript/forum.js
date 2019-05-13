@@ -102,27 +102,3 @@ function sendNewPost(form){
         addRequest.open("GET", fileString, true);
         addRequest.send(null);
 }
-
-//functionality to show forum post text when hovered (desktop) or clicked (mobile)
-$( document ).ready(function(){
-
-	//define function to remove forum post description
-	function showText(){
-		$(".forumpost").css("opacity", "0");
-		$(".forumposttext").css("opacity", "0.8");
-	}
-
-	//define function to show forum post description
-	function hideText(){
-		$(".forumpost").css("opacity", "0.8");
-		$(".forumposttext").css("opacity", "0");
-	}
-
-	$(".forumpost").hover(
-		function(){
-			showText();
-		}, function() {
-			hideText();
-		}	
-	)
-});
