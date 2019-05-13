@@ -271,7 +271,6 @@ th {
 	box-shadow: 3px 3px 1px #505050;
 	width: 6%;
 	text-align: center;
-	font-size: 30px;
         opacity: 0.8;
 	z-index: 2;
 	background: linear-gradient(to top, rgba(102, 130, 175,1), rgba(133, 172, 234 ,1));
