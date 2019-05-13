@@ -222,8 +222,8 @@ th {
         background: linear-gradient(to top, rgba(40,40,40,1), rgba(90,90,90,1));
         color: white;
 	opacity: 0;
-	width: 100%
-	height: 100%
+	width: 100%;
+	height: 100%;
 }
 
 .addnew {
