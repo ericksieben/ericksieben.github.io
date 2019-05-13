@@ -104,7 +104,7 @@ function sendNewPost(form){
 }
 
 //functionality to show forum post text when hovered (desktop) or clicked (mobile)
-$(document).ready(function(){
+document.ready(function(){
 
 	//define function to remove forum post description
 	function showText(){
