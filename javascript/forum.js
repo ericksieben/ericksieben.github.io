@@ -102,3 +102,49 @@ function sendNewPost(form){
         addRequest.open("GET", fileString, true);
         addRequest.send(null);
 }
+
+//viewThread:
+//show all posts with the same parent postID as that passed
+//to the function
+function viewThread(parentId){
+        var ajaxRequest;
+        try {
+                //Opera, Firefox Safari
+                ajaxRequest = new XMLHttpRequest();
+        } catch (e) {
+
+                //Internet Explorer
+                try {
+                        ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+                } catch (e) {
+
+                        try {
+                                ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+                        } catch (e) {
+
+                                //Something went wrong
+                                alert("Unable to support browser");
+                                return false;
+                        }
+                }
+        }
+
+        //direct received data to appropreate html elements
+        ajaxRequest.onreadystatechange = function() {
+
+                //readyState = 4 indicates completed request
+                if(ajaxRequest.readyState == 4) {
+
+			//process and display results from database
+                        var postDisplay = document.getElementById("postList");
+			var display_string = ajaxRequest.responseText;
+                        postDisplay.innerHTML = display_string;
+			//ajaxDisplay.innerHTML = "testing :D";
+                }
+        }
+
+        //call server script to query database
+	var fileString = "../php/forum-viewthread.php?parentid=" + parentId;
+        ajaxRequest.open("GET", fileString, true);
+        ajaxRequest.send(null);
+}
