@@ -270,6 +270,7 @@ th {
 	right: 1%;
 	box-shadow: 3px 3px 1px #505050;
 	width: 6%;
+	min-width: 100px;
 	text-align: center;
         opacity: 0.8;
 	z-index: 2;
