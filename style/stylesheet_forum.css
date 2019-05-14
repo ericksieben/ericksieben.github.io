@@ -241,6 +241,7 @@ th {
         opacity: 0.8;
         border-radius: 1000px;
         width: 6%;
+	min-width: 100px;
 	z-index: 2;
 }
 
