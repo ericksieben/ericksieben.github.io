@@ -4,7 +4,7 @@
 
 hosted on DigitalOcean Droplet
 
-Back end PHP scripts exist only on server
+Back end PHP scripts exist only on server (/var/www/html/php)
 
 URL: www.erick-sieben.com
 
